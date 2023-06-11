@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e8aa5a55a0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="container">
+        <div class="search">
+            <form id="searchCityForm">
+                <i class="fa-solid fa-location-dot"></i>
+                <input type="text" id="locationInput" placeholder="Your location...">
+                <button type="submit" class="fa-solid fa-magnifying-glass"></button>
+            </form>
+        </div>
+        <div class="weather-result">
+            <div class="main-weather-result">
+                <p id="location"></p>
+                <p id="temp"></p>
+                <p id="description"></p>
+                <img id="weatherIcon" src="">
+            </div>
+            <div class="secondarty-weather-result">
+                <div class="wind">
+                    <p id="wind-speed"></p>    
+                </div>
+                <div class="humidity">
+                    <p id="humidity-percantage"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
