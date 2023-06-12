@@ -13,8 +13,8 @@ body {
     align-content: center;
     width: 100vw;
     height: 100vh;
-    background: rgb(106,13,173);
-    background: linear-gradient(352deg, rgba(106,13,173,1) 0%, rgba(0,0,0,1) 100%);
+    background: rgb(106, 13, 173);
+    background: linear-gradient(352deg, rgba(106, 13, 173, 1) 0%, rgba(0, 0, 0, 1) 100%);
 }
 
 #container {
@@ -57,19 +57,19 @@ body {
 .search input {
     font-size: 1.5rem;
     border: 0px;
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
     text-transform: uppercase;
     width: 75%;
 }
 
 .search input:focus {
     outline: none;
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .search input:active {
     outline: none;
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .search input::placeholder {
