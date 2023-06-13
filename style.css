@@ -19,20 +19,19 @@ body {
 
 #container {
     width: 25vw;
-    height: 60vh;
+    height: min-content;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     align-content: center;
-    background: #999da3;
+    background: #fff;
     padding: 20px;
     border-radius: 10px;
 }
 
 .search {
-    height: 15%;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -52,6 +51,14 @@ body {
     align-content: center;
     background-color: white;
     border-radius: 32px;
+}
+
+.search input:-webkit-autofill,
+.search input:-webkit-autofill:hover,
+.search input:-webkit-autofill:focus,
+.search input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: #000 !important;
 }
 
 .search input {
@@ -90,12 +97,11 @@ body {
     background: #b6b7b9;
 }
 
-.weather-result {
-    height: 85%;
+#weather-result {
     width: 100%;
     background: #fff;
     border-radius: 10px;
-    display: flex;
+    display: none;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -115,22 +121,23 @@ body {
 }
 
 .main-weather-result img {
-    width: 350px;
-    margin-top: -70px;
+    width: 225px;
+    height: 225px;
+    /* margin-top: -70px; */
 }
 
 #location {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-#temp {
     font-size: 2rem;
     margin-bottom: 10px;
 }
 
+#temp {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
 #description {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 10px;
 }
 
@@ -142,4 +149,34 @@ body {
     justify-content: space-around;
     align-items: center;
     align-content: center;
+}
+
+.wind,
+.humidity {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.wind img,
+.humidity img {
+    width: 75px;
+    height: 75px;
+}
+
+#refs {
+    position: absolute;
+    bottom: 30px;
+    width: 10vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#refs i {
+    color: #ffffff;
+    font-size: 3.5rem;
 }

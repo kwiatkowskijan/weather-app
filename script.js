@@ -6,6 +6,8 @@ async function checkWeather() {
   const response = await fetch(apiUrl + `&appid=${apiKey}` + `&q=${location}`);
   var data = await response.json();
 
+  document.getElementById("weather-result").style.display = "flex";
+  
   // document.getElementById("location").textContent = data.name + ", " + data.sys.country;
   document.getElementById("temp").textContent = data.main.temp + "°C";
   document.getElementById("description").textContent = data.weather[0].description;
@@ -16,18 +18,26 @@ async function checkWeather() {
   const description = data.weather[0].description;
 
   const weatherIcons = {
-    "clear sky": "media/icons/day.svg",
+    "clear sky": "media/icons/clear-day.svg",
     "scattered clouds": "media/icons/cloudy.svg",
-    "few clouds": "media/icons/cloudy-day-2.svg",
-    "broken clouds": "media/icons/cloudy-day-3.svg",
-    "shower rain": "media/icons/rainy-6.svg",
-    "rain": "media/icons/rainy-1.svg",
-    "thunderstorm": "media/icons/thunder.svg",
-    "snow": "media/icons/snowy-1.svg",
-    "mist": "media/icons/rainy-1.svg"
+    "few clouds": "media/icons/overcast.svg",
+    "broken clouds": "media/icons/partly-cloudy-day.svg",
+    "shower rain": "media/icons/rain.svg",
+    "rain": "media/icons/partly-cloudy-day-rain.svg",
+    "thunderstorm": "media/icons/thunderstorms-extreme.svg",
+    "snow": "media/icons/snow.svg",
+    "mist": "media/icons/fog.svg"
   };
 
   weatherIcon.src = weatherIcons[description];
+
+  const windSpeed = data.wind.speed;
+
+  if (windSpeed >= 0 && windSpeed <= 5) {
+
+  } else if (windSpeed >= 5.01 && windSpeed <= 10) {
+
+  }
 
 }
 

@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather app - by Jan Kwiatkowski</title>
 
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e8aa5a55a0.js" crossorigin="anonymous"></script>
+    
 </head>
 
 <body>
@@ -23,7 +24,7 @@
                 <button type="submit" class="fa-solid fa-magnifying-glass"></button>
             </form>
         </div>
-        <div class="weather-result">
+        <div id="weather-result">
             <div class="main-weather-result">
                 <!-- <p id="location"></p> -->
                 <img id="weatherIcon" src="">
@@ -32,6 +33,7 @@
             </div>
             <div class="secondarty-weather-result">
                 <div class="wind">
+                    <img id="windIcon" src="media/icons/wind.svg">
                     <p id="wind-speed"></p>
                 </div>
                 <div class="humidity">
@@ -39,6 +41,11 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div id="refs">
+        <a href="https://github.com/kwiatkowskijan" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/jan-kwiatkowski-633215271/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
     </div>
 
     <script src="script.js"></script>
