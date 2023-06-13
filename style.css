@@ -13,8 +13,7 @@ body {
     align-content: center;
     width: 100vw;
     height: 100vh;
-    background: rgb(106, 13, 173);
-    background: linear-gradient(352deg, rgba(106, 13, 173, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    background: rgb(46, 46, 46);
 }
 
 #container {
@@ -26,7 +25,8 @@ body {
     justify-content: center;
     align-items: center;
     align-content: center;
-    background: #fff;
+    background: rgb(11, 94, 149);
+    background: linear-gradient(352deg, rgba(11, 94, 149, 1) 0%, rgba(136, 143, 215, 1) 100%);
     padding: 20px;
     border-radius: 10px;
 }
@@ -97,9 +97,13 @@ body {
     background: #b6b7b9;
 }
 
+#blad {
+    display: none;
+}
+
 #weather-result {
     width: 100%;
-    background: #fff;
+    /* background: #fff; */
     border-radius: 10px;
     display: none;
     flex-direction: column;
@@ -118,6 +122,7 @@ body {
     justify-content: center;
     align-items: center;
     align-content: center;
+    color: #fff;
 }
 
 .main-weather-result img {
@@ -139,6 +144,7 @@ body {
 #description {
     font-size: 2rem;
     margin-bottom: 10px;
+    text-transform: uppercase;
 }
 
 .secondarty-weather-result {
@@ -159,6 +165,7 @@ body {
     justify-content: center;
     align-items: center;
     justify-items: center;
+    color: #fff;
 }
 
 .wind img,
