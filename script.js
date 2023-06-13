@@ -12,7 +12,7 @@ async function checkWeather() {
   } else {
     document.getElementById("blad").style.display = "none";
     document.getElementById("weather-result").style.display = "flex";
-    document.getElementById("temp").textContent = data.main.temp + "°C";
+    document.getElementById("temp").textContent = Math.round(data.main.temp) + "°C";
     document.getElementById("description").textContent = data.weather[0].description;
     document.getElementById("wind-speed").textContent = data.wind.speed + " m/s";
     document.getElementById("humidity-percantage").textContent = data.main.humidity + " %";
