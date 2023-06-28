@@ -2,9 +2,9 @@ const apiKey = "49e123afb349b64bce38e2e970f16ea5";
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric";
 
 async function checkWeather() {
-  var location = document.getElementById("locationInput").value;
+  const location = document.getElementById("locationInput").value;
   const response = await fetch(apiUrl + `&appid=${apiKey}` + `&q=${location}`);
-  var data = await response.json();
+  const data = await response.json();
 
   if (response.status == 404) {
     document.getElementById("blad").style.display = "block";
